@@ -159,51 +159,78 @@ img {
 .profile__social-link{
     font-size: 1.25rem;
     color: var(--title-colour);
-    transition: .3s;
+    transition: .3s; 
 }
 .profile__social-link:hover{
     color:blue;
 }
 
 .profile__info{
-    grid-template-columns: repeat(3,max-content);
-    justify-content: center;
+    grid-template-columns: repeat(3,4);
+    justify-content:center;
     column-gap: 2.5rem;
 }
 .profile__info-group{
-    text-align: center;
+    text-align:center;
 }
 
 .profile__info-number{
     font-size:var(--normal-font-size);
-    margin-bottom:.25rem;
+    margin-bottom: .25rem;
 }
 .profile__info_discription{
     font-size: var(--small-font-size);
     font-weight: 500;
 }
-/*=============== BUTTONS ===============*/
 
-.button{
+.profile__buttons,
+.profile__buttons-small{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile__buttons{
+    column-gap: 1rem;
+}
+.profile__buttons-small{
+    column-gap: .25rem;
+}
+/*=============== BUTTONS ===============*/
+ .button{
     display: inline-flex;
     align-items: center;
-    background-color: grey;
+    column-gap: .5rem;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1.15rem 1.5 rem;
+    border-radius: .5rem;
+    transition: .3s;
+    box-shadow: 0 8px 24px hsla(var(--hue),var(--sat),var(--lig), .25);
+ }
 
-}
+ .button i{
+    font-size: 1.25rem;
 
-.button_small{
+ }
 
+ .button:hover{
+    background-color: var(--first-color-alt);
+ }
 
-}
-
-.button_gray{
+ .button_small{
+    padding: .75rem;
+    box-shadow: none;
+ }
+ 
+.button__gray{
     background-color: var(--text-color-lighten);
-    color:(--title-color);
+    color: var(--title-color);
 }
 
-.button_gray:hover{
+.button__gray{
     background-color: var(--text-color-light);
 }
+ 
 /*=============== FILTERS TABS ===============*/
 
 
