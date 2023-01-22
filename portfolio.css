@@ -348,10 +348,14 @@ img {
 
 
 .filters__active[data-content]{
+    display: grid;
     
 }
 /* Activate button filter */
 
+.filters-tab-active{
+    background-color: var(--body-color);
+}
 
 /*=============== FOOTER ===============*/
 
