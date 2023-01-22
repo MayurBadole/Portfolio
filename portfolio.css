@@ -447,6 +447,79 @@ body.dark-theme{
 /* For medium devices */
 
 @media screen and (min-width: 576px){
-    
+    .project__content{
+        grid-template-columns: 332px; 
+        justify-content: center;
+    }
+    .filters__content{
+        width: 332px;
+        margin:3rem auto;
+    }
+}
+
+@media screen and (min-width:776px){
+    .project__content,
+    .skills__content{
+        grid-template-columns: repeat(2,332px);
+    }
+
+    .skills__content{
+        justify-content: center;
+        column-gap: 3rem;
+
+    }
 }
 /* For large devices */
+
+@media screen and (min-width:992px){
+    .container{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .change--theme{
+        top:2.5rem;
+        right: 2.5;
+    }
+    .profile{
+        padding-top:4rem;
+    }
+    .prfile__border{
+        width:135px;
+        height: 135px;
+        margin-bottom: 1rem;
+    }
+    .profile__perfil{
+        width: 120px;
+        height: 120px;
+    }
+    .profile__perfil img{
+        width: 90px;
+    }
+    .profile__profession{
+        margin-bottom: 1.5rem;
+    }
+    .profile__info{
+        column-gap: 3rem;
+
+    }
+    .profile__info_discription{
+        font-size: var(--small-font-size);
+    }
+    .profile__buttons{
+        column-gap: 2rem;
+    }
+    .project__content{
+        gap: 2rem 3rem;
+    }
+    .projects__model{
+        padding: 1.5rem;
+    }
+    .skills__title{
+        font-size: var(--normal-font-size);
+        margin-bottom: 2.5rem;
+    }
+    .footer__copy{
+        margin: 4.5rem 0 2.5rem;
+    }
+
+}
