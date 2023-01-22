@@ -342,8 +342,14 @@ img {
 
 
 /* Hide and show projects & skills */
+.filters [data-content]{
+    display: none;
+}
 
 
+.filters__active[data-content]{
+    
+}
 /* Activate button filter */
 
 
