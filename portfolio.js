@@ -11,9 +11,10 @@ tabs.forEach(tab=>{
             tc.classList.remove('filters__active')
         })
         target.classList.add('filters__active')
-        
+
         tabs.forEach(t=>{ // t=== tabs
             t.classList.remove('filters-tab-active')
         })
+        tab.classList.add('filter-tab-active')
     })
 })
