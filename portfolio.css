@@ -105,6 +105,30 @@ body.dark-theme{
     the website, in light theme
 ==========*/
 
+.dark-theme .button__gray{
+    background-color: var(--container-color);
+}
+
+.dark-theme .button__gray:hover{
+    background-color: hsl(var(--hue) ,24% , 16%);
+}
+
+.dark-theme .filters__content{
+    background-color: var(--container-color);
+}
+.dark-theme .filters__button{
+    color: #fff;
+}
+.dark-theme::-webkit-scrollbar{
+    background-color: hsl(var(--hue) ,8% , 16%);
+}
+.dark-theme::-webkit-scrollbar-thumb{
+    background-color: hsl(var(--hue) ,8% , 24%);
+}
+.dark-theme::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(var(--hue) ,8% , 34%);
+}
+
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -260,6 +284,7 @@ body.dark-theme{
     column-gap: 1rem;
 }
 .filters__button{
+   
     width: 100%;
     border: none;
     outline: none;
@@ -401,9 +426,27 @@ body.dark-theme{
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width:320px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .profile__info{
+        column-gap: 1.5rem;
+    }
+    .profile__buttons{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
 
+    .skills__box{
+        column-gap: 1rem;
+    }
+}
 
 /* For medium devices */
 
-
+@media screen and (min-width: 576px){
+    
+}
 /* For large devices */
